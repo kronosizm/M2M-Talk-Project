@@ -50,7 +50,7 @@ void setup() {
   Serial.print("AP IP address: ");
   Serial.println(myIP);
   server.on("/", handleRoot);
-  server.on("/led", led);
+  server.on("/pir", led);
   server.begin();
   Serial.println("HTTP server started");
 }
